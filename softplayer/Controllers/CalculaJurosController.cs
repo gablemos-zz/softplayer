@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RestSharp;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,36 +13,23 @@ namespace softplayer.Controllers
     [ApiController]
     public class CalculaJurosController : ControllerBase
     {
-        // GET: api/<CalculaJurosController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet()]
+        public string Get(int valorinicial, int tempo)
         {
-            return new string[] { "value1CalculaJurosController", "value2CalculaJurosController" };
-        }
+            
+            RestClient client = new RestClient("http://localhost:44340/api/taxajuros");
+            RestRequest request = new RestRequest(Method.GET);
+            //request.AddHeader("Content-Type", "application/json");
+            var response = client.Execute(request);
 
-        // GET api/<CalculaJurosController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "valueCalculaJurosController";
-        }
+            //var client = new RestClient("http://viacep.com.br/ws/012241040/json/");
+            //var client = new RestClient("http://localhost:44340/api/taxajuros");
+            //var RSrequest = new RestRequest(Method.GET) { RequestFormat = DataFormat.Json };
 
-        // POST api/<CalculaJurosController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+            //var response = client.Execute(RSrequest);
 
-        // PUT api/<CalculaJurosController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CalculaJurosController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            //var x = valorinicial * (1 + juros.Data) ^ tempo;
+            return "Resultado:";
         }
     }
 }

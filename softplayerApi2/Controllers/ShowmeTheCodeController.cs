@@ -6,18 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace softplayer.Controllers
+namespace softplayerApi2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TaxaJurosController : ControllerBase
+    public class ShowmeTheCodeController : ControllerBase
     {
-        private const double juro = 0.01;
-
         [HttpGet]
-        public double Get()
+        public string Get()
         {
-            return juro;
+            return "https://github.com/gablemos/softplayer";
         }
     }
 }
