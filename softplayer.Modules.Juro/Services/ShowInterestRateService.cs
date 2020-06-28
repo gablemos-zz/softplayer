@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace softplayer.Modules.Juro.Services
 {
-    class ShowInterestRateService
+    public class ShowInterestRateService
     {
-        public InterestRate Execute()
-        {
-            return new InterestRate { value = 0.01 };
-        }
+        public InterestRate Execute() => new InterestRate { value = 0.01 };
     }
 }

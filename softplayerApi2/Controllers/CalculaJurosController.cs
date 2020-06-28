@@ -15,12 +15,13 @@ namespace softplayerApi2.Controllers
     {
         // GET: api/<CalculaJurosController>
         [HttpGet()]
-        public string Get(int valorinicial, int meses)
+        public async Task<string> Get(int valorinicial, int meses)
         {
 
             RestClient client = new RestClient("https://localhost:5001/api/taxajuros");
             RestRequest request = new RestRequest(Method.GET);
-            var response = client.Execute<double>(request);
+            request.AddHeader("Content-Type", "application/json");
+            var response = await client.ExecuteAsync<double>(request);
             var juros = response.Data;            
 
             var x = valorinicial * Math.Pow((1 + juros), meses);

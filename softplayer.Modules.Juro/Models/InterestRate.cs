@@ -6,6 +6,6 @@ namespace softplayer.Modules.Juro.Models
 {
     public class InterestRate
     {
-        public double value;
+        public double value { get; set;}
     }
 }
