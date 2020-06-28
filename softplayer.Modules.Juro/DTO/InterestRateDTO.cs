@@ -4,7 +4,7 @@ using System.Text;
 
 namespace softplayer.Modules.Juro.Models
 {
-    public class InterestRate
+    public class InterestRateDTO
     {
         public double value { get; set;}
     }

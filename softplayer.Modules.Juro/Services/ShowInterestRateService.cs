@@ -8,6 +8,6 @@ namespace softplayer.Modules.Juro.Services
 {
     public class ShowInterestRateService
     {
-        public InterestRate Execute() => new InterestRate { value = 0.01 };
+        public InterestRateDTO Execute() => new InterestRateDTO { value = 0.01 };
     }
 }
