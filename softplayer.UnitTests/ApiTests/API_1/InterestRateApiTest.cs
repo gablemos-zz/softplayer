@@ -15,8 +15,8 @@ namespace softplayer.Tests.ApiTests
         [Fact(DisplayName = "Interest Rate should be 1 % or 0.01")]
         public async void Filled_url_field()
         {
-            RestClient client = new RestClient("https://localhost:5001");
-            RestRequest request = new RestRequest("api/taxajuros", Method.GET);
+            RestClient client = new RestClient("https://localhost:44340");
+            RestRequest request = new RestRequest("api/v1/taxajuros", Method.GET);
             request.AddHeader("Content-Type", "application/json");
             var response = await client.ExecuteAsync<InterestRateDTO>(request);
             var expected = new InterestRateDTO { value = 0.01 };

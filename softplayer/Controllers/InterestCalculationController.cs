@@ -12,9 +12,9 @@ using softplayer.Modules.Juro.Services;
 
 namespace softplayerApi2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/calculajuros")]
     [ApiController]
-    public class CalculaJurosController : ControllerBase
+    public class InterestCalculationController : ControllerBase
     {
 
         [HttpGet()]

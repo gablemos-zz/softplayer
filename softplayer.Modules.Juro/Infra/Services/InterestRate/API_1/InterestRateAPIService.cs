@@ -12,8 +12,8 @@ namespace softplayer.Modules.Juro.Infra.Services
     {
         public async Task<double> Get()
         {
-            InfraRestSharpClient client = new InfraRestSharpClient("https://localhost:5001");
-            var response = await client.Get<InterestRateDTO>("api/taxajuros");
+            InfraRestSharpClient client = new InfraRestSharpClient("https://localhost:44340");
+            var response = await client.Get<InterestRateDTO>("api/v1/taxajuros");
             return response.value;
         }
     }

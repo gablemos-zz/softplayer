@@ -8,7 +8,7 @@ using softplayer.Modules.Juro.Services;
 
 namespace softplayer.Controllers
 {
-    [Route("api/taxajuros")]
+    [Route("api/v1/taxajuros")]
     [ApiController]
     [Produces("application/json")]
     public class InterestRateController : ControllerBase
