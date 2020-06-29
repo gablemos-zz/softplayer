@@ -55,6 +55,8 @@ Gostaria de pontuar que deixei os arquivos de docker nos projeto e infelizmente 
 
 Também tentei fazer o máximo de commits para que pudessem ver a forma como desenvolvo, apesar de não ter o hábito de seguir TDD a risca, é na fase de criação de testes onde vem a grande parte do refactor e melhoria do meu código, em minha opinião. Espero que tenha conseguido ter registrado isso através da timeline dos commits, um pouco de arquitetura e design.
 
+Update: Tive problemas no deploy por terem 2 projetos web e tive que excluir o projetos de softplayerApi2, vou deixar as instruções abaixo (readicionar o csproj a solution para voltar a ter dois serviços de api, sinto muito e este não é o nível de trabalho que costumo entregar espero que possam perdoar esta falha)
+
 Nas actions do Github poderão ver o deploy e para acessar a aplicação no azure: 
 
 https://softplayer.azurewebsites.net/swagger/index.html
@@ -89,27 +91,28 @@ https://dotnet.microsoft.com/download
 ```sh
 git clone https://github.com/gablemos/softplayer.git
 ```
-2. Acesse o diretório sofplayer acima do diretório da solution
+2. Adicione o projeto softplayerApi2 a solution
+3. Acesse o diretório sofplayer acima do diretório da solution
 ```sh
 cd ~/softplayer/softplayer
 ``` 
-3. Restaure os pacotes
+4. Restaure os pacotes
 ```sh
 dotnet restore
 ```
-4. Rode o projeto
+5. Rode o projeto
 ```sh
 dotnet run
 ```
-5. Acesse o diretório sofplayer acima do diretório da solution
+6. Acesse o diretório sofplayer acima do diretório da solution
 ```sh
 cd ~/softplayer/softplayerApi2
 ``` 
-6. Restaure os pacotes
+7. Restaure os pacotes
 ```sh
 dotnet restore
 ```
-7. Rode o projeto
+8. Rode o projeto
 ```sh
 dotnet run
 ```
