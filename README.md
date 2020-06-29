@@ -47,16 +47,13 @@
 
 Descrição das escolhas tomadas:
 
-Será perceptivel algumas falhas devido como a forma errada de se versionar as apis, ou a ausencia da injeção de dependencia ou de mock.
-
-
 Todas estas decisões foram tomadas de forma deliberada como escolha para que outra implementação pudesse ser feita, testes, deploy, configuração de pipeline.
 
-Outra decisão que tomei foi a de não separar em duas aplicações, decidi por uma abordagem de apis asincronas para que eu pudesse fazer um único deploy, mas no repositorio é possível ver o segundo projeto de api. Trabalhando com apenas serviços asincronos não houve lock e assim a aplicação pode fazer chamadas a si mesma sem problemas. Novamente, decisão para que os custos de publicação do meu teste para vocÊs fosse um pouco menor e eu pudesse entregar algo além do que foi solicitado e demonstrar um pouco mais do que sei, espero que levem em consideração.
+Outra decisão que tomei foi a de não separar em duas aplicações para o deploy de demonstração que preparei, mas no repositorio é possível ver o segundo serviço funcionando de forma integrada entre si. Novamente, decisão para que os custos de publicação do meu teste para vocês fosse um pouco menor e eu pudesse entregar algo além do que foi solicitado e demonstrar um pouco mais do que sei, espero que levem em consideração.
 
-Gostaria de pontuar que deixei os arquivos de docker no projeto.
+Gostaria de pontuar que deixei os arquivos de docker nos projeto e infelizmente não tive tempo de fazer um um compose para levantar as duas aplicações de forma mais simples.
 
-Também tentei fazer o máximo de commits para que pudessem ver a forma como desenvolvo, apesar de não ter o hábito de seguir TDD a risca, é na fase de criação de testes onde vem a grande parte do refactor e melhoria do meu código, em minha opinião. Espero que tenha conseguido ter registrado isso através da timeline dos commits.
+Também tentei fazer o máximo de commits para que pudessem ver a forma como desenvolvo, apesar de não ter o hábito de seguir TDD a risca, é na fase de criação de testes onde vem a grande parte do refactor e melhoria do meu código, em minha opinião. Espero que tenha conseguido ter registrado isso através da timeline dos commits, um pouco de arquitetura e design.
 
 Nas actions do Github poderão ver o deploy e para acessar a aplicação no azure: 
 
@@ -76,7 +73,7 @@ https://softplayer.azurewebsites.net/swagger/index.html
 
 Pode acessar a aplicação por: https://softplayer.azurewebsites.net/swagger/index.html
 
-Ou siga os passos a seguintes.
+Ou siga os passos a seguintes (alguns passos podem mudar caso utilize visual studio, a maioria dos passo a seguir é pensando no VS Code).
 
 ### Requisitos
 
