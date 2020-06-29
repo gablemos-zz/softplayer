@@ -5,7 +5,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-![Build and deploy ASP.Net Core app to Azure Web App - softplayer](https://github.com/gablemos/softplayer/workflows/Build%20and%20deploy%20ASP.Net%20Core%20app%20to%20Azure%20Web%20App%20-%20softplayer/badge.svg)
+![Build and deploy ASP.Net Core app to Azure Web App - softplayer](https://github.com/gablemos/softplayer/workflows/Build%20and%20deploy%20ASP.Net%20Core%20app%20to%20Azure%20Web%20App%20-%20softplayer/badge.svg?branch=master&event=push)
 
 <br />
 <p align="center">
