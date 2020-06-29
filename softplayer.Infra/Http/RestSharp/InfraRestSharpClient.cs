@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace softplayer.Modules.Juro.Infra.Http.RestSharp
+namespace softplayer.Infra.Http.RestSharp
 {
-    public class RestSharpClient
+    public class InfraRestSharpClient
     {
         private string _baseUrl;
 
-        public RestSharpClient(string baseUrl)
+        public InfraRestSharpClient(string baseUrl)
         {
             _baseUrl = baseUrl;
         }

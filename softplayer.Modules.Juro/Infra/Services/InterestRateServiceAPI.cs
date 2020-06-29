@@ -1,4 +1,4 @@
-﻿using softplayer.Modules.Juro.Infra.Http.RestSharp;
+﻿using softplayer.Infra.Http.RestSharp;
 using softplayer.Modules.Juro.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace softplayer.Modules.Juro.Infra.Services
     {
         public async Task<double> Get()
         {
-            RestSharpClient client = new RestSharpClient("https://localhost:5001");
+            InfraRestSharpClient client = new InfraRestSharpClient("https://localhost:5001");
             var response = await client.Get<InterestRateDTO>("api/taxajuros");
             return response.value;
         }

@@ -17,6 +17,7 @@ namespace softplayer.Controllers
         [HttpGet]
         public async Task<ActionResult> Get()
         {
+            await Task.Delay(1);
             InterestRateDTO interestRate = InterestRateService.Execute();
 
             return Ok(interestRate);

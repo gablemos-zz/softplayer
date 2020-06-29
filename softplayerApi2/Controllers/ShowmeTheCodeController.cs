@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using softplayer.Modules.Code.DTOs;
+using softplayer.Modules.Code.Infra.Services;
+using softplayer.Modules.Code.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,10 +15,15 @@ namespace softplayerApi2.Controllers
     [ApiController]
     public class ShowmeTheCodeController : ControllerBase
     {
-        [HttpGet]
-        public string Get()
+        [HttpGet()]
+        public async Task<ActionResult> Get()
         {
-            return "https://github.com/gablemos/softplayer";
+            //TODO
+            //Se der tempo adicionar ijeção de dependencia
+            RepoSoftplayerInfoServiceAPI serviceAPI = new RepoSoftplayerInfoServiceAPI();
+            ShowRepoService RepoService = new ShowRepoService(serviceAPI);
+            RepoDTO repo = await RepoService.Execute();
+            return Ok(repo);
         }
     }
 }
