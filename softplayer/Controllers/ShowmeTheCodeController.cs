@@ -18,8 +18,6 @@ namespace softplayerApi2.Controllers
         [HttpGet()]
         public async Task<ActionResult> Get()
         {
-            //TODO
-            //Se der tempo adicionar ijeção de dependencia
             RepoSoftplayerInfoAPIService serviceAPI = new RepoSoftplayerInfoAPIService();
             ShowRepoService RepoService = new ShowRepoService(serviceAPI);
             RepoDTO repo = await RepoService.Execute();

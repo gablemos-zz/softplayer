@@ -20,7 +20,6 @@ namespace softplayerApi2.Controllers
         [HttpGet()]
         public async Task<ActionResult> Get(double valorinicial, int meses)
         {
-            //adicionar injeção de dependencia
             InterestRateAPIService interestRateServiceApi = new InterestRateAPIService();
             ShowInterestCalculationService InterestCalculationService = new ShowInterestCalculationService(interestRateServiceApi);
             InterestRateDTO interestRate = await InterestCalculationService.Execute(valorinicial, meses);
