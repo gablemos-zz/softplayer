@@ -43,7 +43,7 @@
 
 ## Sobre o Projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://softplayer.azurewebsites.net/swagger/index.html)
 
 Descrição das escolhas tomadas:
 
