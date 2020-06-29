@@ -8,7 +8,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/gablemos/softplayer">
+  <a href="https://www.softplan.com.br">
     <img src="images/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
@@ -43,7 +43,7 @@
 
 ## Sobre o Projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://softplayer.azurewebsites.net/swagger/index.html)
 
 Descrição das escolhas tomadas:
 
@@ -118,7 +118,7 @@ dotnet run
 
 1. Verificar a url nos testes e nos services, no último commit foram apontados para os endereços de que fiz o deploy
 ```sh
-Chegar URL e Portas
+Checar URL e Portas (dependendo se estiver executando pelo IIS ou pelo docker)
 ```
 
 ## Licença
