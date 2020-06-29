@@ -58,6 +58,8 @@ Também tentei fazer o máximo de commits para que pudessem ver a forma como des
 
 Update: Tive problemas no deploy por terem 2 projetos web e tive que excluir o projetos de softplayerApi2, vou deixar as instruções abaixo (readicionar o csproj a solution para voltar a ter dois serviços de api, sinto muito e este não é o nível de trabalho que costumo entregar espero que possam perdoar esta falha)
 
+Update: Para finalizar atualizei a pipeline para executar os testes antes de publicar.
+
 Nas actions do Github poderão ver o deploy e para acessar a aplicação no azure: 
 
 https://softplayer.azurewebsites.net/swagger/index.html
