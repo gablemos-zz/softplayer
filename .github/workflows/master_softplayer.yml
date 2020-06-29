@@ -26,9 +26,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       
-    - name: xUnit Slack Reporter
-      uses: ivanklee86/xunit-slack-reporter@v1.0.1
-      
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
