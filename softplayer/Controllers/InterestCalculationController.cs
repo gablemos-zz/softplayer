@@ -16,7 +16,6 @@ namespace softplayerApi2.Controllers
     [ApiController]
     public class InterestCalculationController : ControllerBase
     {
-
         [HttpGet()]
         public async Task<ActionResult> Get(double valorinicial, int meses)
         {
