@@ -109,7 +109,7 @@ dotnet run
 
 1. Verificar a url nos testes e nos services, no último commit foram apontados para os endereços de que fiz o deploy
 ```sh
-Chegar URL e Portas
+Checar URL e Portas (dependendo se estiver executando pelo IIS ou pelo docker)
 ```
 
 ## Licença
