@@ -101,6 +101,18 @@ dotnet restore
 ```sh
 dotnet run
 ```
+5. Acesse o diretório sofplayer acima do diretório da solution
+```sh
+cd ~/softplayer/softplayerApi2
+``` 
+6. Restaure os pacotes
+```sh
+dotnet restore
+```
+7. Rode o projeto
+```sh
+dotnet run
+```
 
 ### Atenção
 
