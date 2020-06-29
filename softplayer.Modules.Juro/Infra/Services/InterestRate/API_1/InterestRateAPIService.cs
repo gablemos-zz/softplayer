@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace softplayer.Modules.Juro.Infra.Services
 {
-    public class FakeInterestRateAPIService : IInterestRateAPIService
+    public class InterestRateAPIService : IInterestRateAPIService
     {
         public async Task<double> Get()
         {

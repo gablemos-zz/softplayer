@@ -1,24 +1,25 @@
+using FluentAssertions;
 using softplayer.Modules.Code.Infra.Services;
 using softplayer.Modules.Code.Infra.Services.Repo;
 using softplayer.Modules.Code.Services;
 using System;
 using Xunit;
 
-namespace softplayer.UnitTests
+namespace softplayer.Tests.IntegrationTests
 {
     public class ShowRepoServiceTest
     {
-        private readonly FakeRepoAPIService fakeRepoServiceApi = new FakeRepoAPIService();
+        private readonly RepoSoftplayerInfoAPIService repoServiceApi = new RepoSoftplayerInfoAPIService();
 
         [Fact(DisplayName = "it should be able to return an url")]
         public async void Filled_url_field()
         {
-            ShowRepoService repoService = new ShowRepoService(fakeRepoServiceApi);
+            ShowRepoService repoService = new ShowRepoService(repoServiceApi);
 
             var expected = "https://github.com/gablemos/softplayer";
             var result = await repoService.Execute();
 
-            Assert.Equal(expected, result.html_url);
+            expected.Should().Be(result.html_url);
         }
     }
 }

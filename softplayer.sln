@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayer", "softplayer\softplayer.csproj", "{19C7BBDD-970B-4DB2-876E-4B25385F6BB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayer.UnitTests", "softplayer.UnitTests\softplayer.UnitTests.csproj", "{9F366F49-1BD6-4CE2-B500-BB23CCCE498F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayer.Tests", "softplayer.UnitTests\softplayer.Tests.csproj", "{9F366F49-1BD6-4CE2-B500-BB23CCCE498F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "softplayer.Modules.Juro", "softplayer.Modules.Juro\softplayer.Modules.Juro.csproj", "{A301EA29-89E1-4132-A86E-19E165D2A94A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayer.Modules.Juro", "softplayer.Modules.Juro\softplayer.Modules.Juro.csproj", "{A301EA29-89E1-4132-A86E-19E165D2A94A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "softplayer.Modules.Code", "softplayer.Modules.Code\softplayer.Modules.Code.csproj", "{517A03C1-70E3-4FB9-BD5F-23580DFBED26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayer.Modules.Code", "softplayer.Modules.Code\softplayer.Modules.Code.csproj", "{517A03C1-70E3-4FB9-BD5F-23580DFBED26}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayerApi2", "softplayerApi2\softplayerApi2.csproj", "{BA78E20C-2CE7-49FE-BAE8-396FB7201668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "softplayer.Infra", "softplayer.Infra\softplayer.Infra.csproj", "{D7340F04-4B2B-4D5E-A86D-75E418448538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "softplayer.Infra", "softplayer.Infra\softplayer.Infra.csproj", "{D7340F04-4B2B-4D5E-A86D-75E418448538}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,3 +1,4 @@
+using FluentAssertions;
 using softplayer.Modules.Code.Infra.Services;
 using softplayer.Modules.Code.Infra.Services.Repo;
 using softplayer.Modules.Code.Services;
@@ -5,7 +6,7 @@ using softplayer.Modules.Juro.Services;
 using System;
 using Xunit;
 
-namespace softplayer.UnitTests
+namespace softplayer.Tests.UnitTests
 {
     public class ShowInterestRateServiceTest
     {
@@ -17,7 +18,7 @@ namespace softplayer.UnitTests
             var result = interestRateService.Execute();
             var expected = 0.01;
 
-            Assert.Equal(expected, result.value);
+            expected.Should().Be(result.value);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RestSharp;
+using softplayer.Modules.Juro.Infra.Services;
 using softplayer.Modules.Juro.Models;
 using softplayer.Modules.Juro.Services;
 
@@ -15,11 +16,13 @@ namespace softplayerApi2.Controllers
     [ApiController]
     public class CalculaJurosController : ControllerBase
     {
-        ShowInterestCalculationService InterestCalculationService = new ShowInterestCalculationService();
 
         [HttpGet()]
         public async Task<ActionResult> Get(double valorinicial, int meses)
         {
+            //adicionar injeção de dependencia
+            InterestRateAPIService interestRateServiceApi = new InterestRateAPIService();
+            ShowInterestCalculationService InterestCalculationService = new ShowInterestCalculationService(interestRateServiceApi);
             InterestRateDTO interestRate = await InterestCalculationService.Execute(valorinicial, meses);
 
             return Ok(interestRate);
