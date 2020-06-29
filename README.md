@@ -8,7 +8,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/gablemos/softplayer">
+  <a href="https://www.softplan.com.br">
     <img src="images/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
