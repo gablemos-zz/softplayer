@@ -20,7 +20,7 @@ namespace softplayerApi2.Controllers
         {
             //TODO
             //Se der tempo adicionar ijeção de dependencia
-            RepoSoftplayerInfoServiceAPI serviceAPI = new RepoSoftplayerInfoServiceAPI();
+            RepoSoftplayerInfoAPIService serviceAPI = new RepoSoftplayerInfoAPIService();
             ShowRepoService RepoService = new ShowRepoService(serviceAPI);
             RepoDTO repo = await RepoService.Execute();
             return Ok(repo);

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace softplayer.Modules.Code.Infra.Services
 {
-    public class RepoSoftplayerInfoServiceAPI : IRepoAPIService
+    public class RepoSoftplayerInfoAPIService : IRepoAPIService
     {
         public async Task<RepoDTO> Get()
         {

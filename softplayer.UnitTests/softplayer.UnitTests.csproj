@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\softplayer.Modules.Code\softplayer.Modules.Code.csproj" />
+    <ProjectReference Include="..\softplayer.Modules.Juro\softplayer.Modules.Juro.csproj" />
   </ItemGroup>
 
 </Project>
